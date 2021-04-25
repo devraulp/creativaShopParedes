@@ -6,11 +6,9 @@ export const NavBar = () => {
     <header>
         <p className="navbar titulo">CREATIVA</p>        
         <nav className="navbar">
-          <div>            
-            <a href="">Inicio</a>
-            <a href="">Productos</a>
-            <a href="">Contacto</a>
-          </div>
+          <p>Inicio</p>
+          <p>Productos</p>
+          <p>Contacto</p>
           <CartWidget/>
         </nav>        
     </header>

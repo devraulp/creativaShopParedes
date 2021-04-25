@@ -1,0 +1,35 @@
+.Item {
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.288);
+}
+
+button {
+  font-size: inherit;
+  background-color: #FFE411;
+  width: 120px;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 5px;
+}
+
+.descripProduct {
+  display: inline;
+  text-align: center;
+  margin: 10px;
+  width: 500px;
+  padding: 0;
+}
+
+.descripProduct h4 {
+  font-size: 24px;
+  margin: 5px;
+}
+
+.descripProduct img {
+  border: 1px black solid;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=Item.css.map */
