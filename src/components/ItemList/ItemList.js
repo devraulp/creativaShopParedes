@@ -53,7 +53,7 @@ export function Products() {
         <div>
             {products.map(
                         products => (
-                            <div className="products" >
+                            <div className="products" key={`${products.id}`}>
                                 <h4>{`${products.title}`}</h4>
                                 <img src={`${products.pictureUrl}`} alt=""/>
                                 <p>{`${products.description}`}</p>
