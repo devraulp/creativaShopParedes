@@ -34,6 +34,9 @@
 }
 
 .itemCount div button {
+  background-color: #FFE411;
+  font-size: 25px;
+  height: 45px;
   width: 15%;
 }
 
@@ -44,7 +47,7 @@
 }
 
 .itemCount .comprar button {
-  width: 150px;
+  width: 310px;
   text-align: center;
 }
 /*# sourceMappingURL=ItemCount.css.map */

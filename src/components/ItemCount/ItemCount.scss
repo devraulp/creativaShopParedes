@@ -11,12 +11,15 @@
         border: 1px black solid;
         margin: 0;
     }
-    div {
+    div {        
         align-items: center;
         justify-content: center;
         display: flex;    
         border: 1px black solid;
         button {
+            background-color: #FFE411;
+            font-size: 25px;
+            height: 45px;
             width: 15%;
         }
         input {
@@ -27,7 +30,7 @@
     }
     .comprar {
         button {
-            width: 150px;
+            width: 310px;
             text-align: center;
         }
     }

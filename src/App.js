@@ -1,16 +1,22 @@
+import React from "react";
 import './App.css';
 import {NavBar} from "./components/NavBar/NavBar";
 import {ItemListContainer} from "./components/ItemListContainer/ItemListContainer";
-import {ItemDetail} from "./components/ItemDetail/ItemDetail"
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import {BrowserRouter, Switch, Route} from "react-router-dom"
 
 
 function App() {
-  return (        
-    <div>
-      <NavBar/>
-      <ItemDetail/>
-      <ItemListContainer greeting="Lista de Ariculos"/>
-    </div>    
+  return (  
+    <BrowserRouter>
+      <NavBar/> 
+      <ItemDetailContainer/>     
+      <Switch>
+        {/* <Route component={Inicio}/> */}
+        <Route component={ItemListContainer}/>
+        {/* <Route component={Contacto}/> */}
+      </Switch>
+    </BrowserRouter>
   )
 }
 

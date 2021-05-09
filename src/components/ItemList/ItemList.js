@@ -1,9 +1,10 @@
+import React, { useState, } from "react";
 import './ItemList.css';
-import { useState } from "react";
+
 
 export function Products() {
-    
-    const [products] = useState ([
+
+    const [products] = useState([
         {
             id: "almohadones",
             title: "Almohadones",
@@ -36,7 +37,7 @@ export function Products() {
             id: "souvenir",
             title: "Souvenir",
             description: "Hermosos kits para bebes, ideales para obsequiar, nacimiento, baby shower, sorprende a esa persona tan especial con estos hermosos detalle, elaborados con todo el amor y con materiales de primera.",
-            price: "80",
+            price: 80,
             pictureUrl: "https://devraulp.github.io/creativa/img/img5a.jpg"
         },
         {
@@ -49,19 +50,20 @@ export function Products() {
     ])
 
     return (
-        
+
         <div>
+            <h3>Galeria de Productos</h3>
             {products.map(
-                        products => (
-                            <div className="products" key={`${products.id}`}>
-                                <h4>{`${products.title}`}</h4>
-                                <img src={`${products.pictureUrl}`} alt=""/>
-                                <p>{`${products.description}`}</p>
-                                <div>{`${products.price} UYU`}</div>                             
-                            </div>
-                        )
+                products => (                    
+                        <div className="products" key={`${products.id}`}>
+                            <h4>{`${products.title}`}</h4>
+                            <img src={`${products.pictureUrl}`} alt="" />
+                            <p>{`${products.description}`}</p>
+                            <div>{`${products.price}`} UYU</div>
+                        </div>                    
                 )
+            )
             }
-        </div>   
+        </div>
     )
 }

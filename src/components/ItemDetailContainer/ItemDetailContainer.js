@@ -1,9 +1,9 @@
-import { UseState } from "react";
+import { useState } from "react";
 import "./ItemDetailContainer.css";
-import {ItemCount} from "../ItemCount/ItemCount"
+import {ItemCount} from "../ItemCount/ItemCount";
 
-export const getItem = () => {
-    const [almohadon, setAlmohadon] = UseState("")
+export const ItemDetailContainer = () => {
+    const [almohadon, setAlmohadon] = useState("")
 
     let mostreElProducto;
     
@@ -100,6 +100,7 @@ export const getItem = () => {
 
     return (
         <div>
+            <h3>Seleccione el producto que desea Comprar</h3>        
             <div className="Item" >
                 <button onClick={clickAlmohadones}>Almohadones</button>
                 <button onClick={clickMantas}>Mantas</button>
@@ -108,7 +109,9 @@ export const getItem = () => {
                 <button onClick={clickSouvenirs}>Souvenirs</button>
                 <button onClick={clickBaberos}>Baberos</button>                
             </div> 
-            <div>{almohadon}</div>    
+            <div>{almohadon}</div>
         </div>
     )
 }
+
+export default ItemDetailContainer;

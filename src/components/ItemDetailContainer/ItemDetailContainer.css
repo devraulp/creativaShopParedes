@@ -1,5 +1,17 @@
-.Items {
+.Item {
   font-size: 37px;
   text-align: center;
+}
+
+.Item button {
+  background-color: #FFE411;
+  font-size: 15px;
+  margin: 0 10px;
+  width: 120px;
+  padding: 8px;
+}
+
+.descripProduct img {
+  width: 200px;
 }
 /*# sourceMappingURL=ItemDetailContainer.css.map */
