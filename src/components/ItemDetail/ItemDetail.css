@@ -13,29 +13,10 @@ button {
   padding: 5px;
 }
 
-.descripProduct {
-  display: table-footer-group;
+.comprar button {
+  margin-top: 5px;
+  width: 310px;
   text-align: center;
-  margin: 10px;
-  width: 500px;
-  padding: 0;
-}
-
-.descripProduct h4 {
-  font-size: 24px;
-  margin: 5px;
-}
-
-.descripProduct img {
   border: 1px black solid;
-  margin: 10px;
-  width: 200px;
-  height: 200px;
-}
-
-.descripProduct p {
-  padding: 5px;
-  width: 280px;
-  height: 150px;
 }
 /*# sourceMappingURL=ItemDetail.css.map */

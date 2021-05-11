@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ItemDetailContainer.css";
-import {ItemCount} from "../ItemCount/ItemCount";
+import {ItemDetail} from "../ItemDetail/ItemDetail";
+
 
 export const ItemDetailContainer = () => {
     const [almohadon, setAlmohadon] = useState("")
@@ -28,12 +29,9 @@ export const ItemDetailContainer = () => {
         mostreElProducto = () => {
             setAlmohadon(
             <div className="descripProduct" >
-                <h4>Almohadones</h4>
-                <img src="https://devraulp.github.io/creativa/img/img1a.jpg" alt=""/>                
-                <ItemCount stock={5} initial={1} onAdd={1} />                            
-            </div>)
+                <ItemDetail title={"Almohadones"} src={"https://devraulp.github.io/creativa/img/img1a.jpg"} />
+            </div>)                      
         }
-
         promesa()
     }
 
@@ -41,57 +39,48 @@ export const ItemDetailContainer = () => {
         mostreElProducto = () => {
             setAlmohadon(
             <div className="descripProduct" >
-                <h4>Mantas</h4>
-                <img src="https://devraulp.github.io/creativa/img/img2a.jpg" alt=""/>                
-                <ItemCount stock={5} initial={1} onAdd={1} />                            
-            </div>)
+                <ItemDetail  title={"Mantas"} src={"https://devraulp.github.io/creativa/img/img2a.jpg"} />
+            </div>) 
         }
-
         promesa()
     }
+
     const clickNidos = () => {
         mostreElProducto = () => {
             setAlmohadon(
             <div className="descripProduct" >
-                <h4>Nidos</h4>
-                <img src="https://devraulp.github.io/creativa/img/img3a.jpg" alt=""/>                
-                <ItemCount stock={5} initial={1} onAdd={1} />                            
+                <ItemDetail  title={"Nidos"} src={"https://devraulp.github.io/creativa/img/img3a.jpg"} />
             </div>)
         }
-
         promesa()
     }
+
     const clickCojines = () => {
         mostreElProducto = () => {
             setAlmohadon(
             <div className="descripProduct" >
-                <h4>Cojines</h4>
-                <img src="https://devraulp.github.io/creativa/img/img4a.jpg" alt=""/>                
-                <ItemCount stock={5} initial={1} onAdd={1} />                            
+                <ItemDetail  title={"Cojines"} src={"https://devraulp.github.io/creativa/img/img4a.jpg"} />
             </div>)
         }
 
         promesa()
     }
+
     const clickSouvenirs = () => {
         mostreElProducto = () => {
             setAlmohadon(
             <div className="descripProduct" >
-                <h4>Souvenir</h4>
-                <img src="https://devraulp.github.io/creativa/img/img5a.jpg" alt=""/>                
-                <ItemCount stock={5} initial={1} onAdd={1} />                            
+                <ItemDetail  title={"Souvenir"} src={"https://devraulp.github.io/creativa/img/img5a.jpg"} />
             </div>)
         }
-
         promesa()
     }
+
     const clickBaberos = () => {
         mostreElProducto = () => {
             setAlmohadon(
             <div className="descripProduct" >
-                <h4>Baberos</h4>
-                <img src="https://devraulp.github.io/creativa/img/img6a.jpg" alt=""/>                
-                <ItemCount stock={5} initial={1} onAdd={1} />                            
+                <ItemDetail  title={"Baberos"} src={"https://devraulp.github.io/creativa/img/img6a.jpg"} />
             </div>)
         }
 
@@ -100,7 +89,7 @@ export const ItemDetailContainer = () => {
 
     return (
         <div>
-            <h3>Seleccione el producto que desea Comprar</h3>        
+            <h3>Seleccione el producto que desea Comprar</h3> 
             <div className="Item" >
                 <button onClick={clickAlmohadones}>Almohadones</button>
                 <button onClick={clickMantas}>Mantas</button>
@@ -113,5 +102,3 @@ export const ItemDetailContainer = () => {
         </div>
     )
 }
-
-export default ItemDetailContainer;

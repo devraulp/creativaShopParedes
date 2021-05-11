@@ -1,9 +1,4 @@
-.Item {
-  font-size: 37px;
-  text-align: center;
-}
-
-.Item button {
+.descripProduct button {
   background-color: #FFE411;
   font-size: 15px;
   margin: 0 10px;

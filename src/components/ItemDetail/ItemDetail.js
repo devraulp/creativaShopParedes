@@ -1,24 +1,27 @@
-import React, { useState, useContext } from "react";
-import { ItemCount } from "../ItemCount/ItemCount"
+import { ItemCount} from "../ItemCount/ItemCount";
+import {useState} from "react";
 import "./ItemDetail.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
-export function ItemDetail(props) {
+export const ItemDetail = ({title, src}) => {
 
-    const [cantidad, setCantidad] = useState(1);
-
-    function productsWished (c) {
-        setCantidad(c);
-    }
-
+    const [quantity, setQuantity] = useState();
+    function onAdd (e) {
+        setQuantity(e.count)
+    }    
+    
+    
     return (
-        <div>
-            <ItemCount
-                func={productsWished}
-            />
-            <input
-                type="button"
-                value={`Añadir al carrito ${cantidad}`}
-            />            
+        <div className="descripProduct" >
+            <h4>{title}</h4>
+            <img src={src} alt=""/>                
+            <ItemCount stock={5} initial={1} onAdd={onAdd} /> 
+            <div className="comprar">
+                <Link to="/Cart"><button> Añadir al Carrito  ( {quantity} )</button></Link>     
+            </div>          
         </div>
-    );
+    )
+        
 }
+

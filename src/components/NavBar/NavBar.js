@@ -11,6 +11,7 @@ export const NavBar = () => {
           <p> Productos </p>
           <p><Link to="" >Contacto</Link></p>
           <CartWidget/>
+          <p className="cantCompra">0</p>
         </nav>        
     </header>
   );
