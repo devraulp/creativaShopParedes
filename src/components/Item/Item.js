@@ -1,15 +1,13 @@
 import React from "react";
 import "./Item.css";
+import { Link } from "react-router-dom";
 
-export function Item(props) {
+export const Item = ({title, pictureUrl, pictureUrlAlt, id}) => {
     return (
-        <div className="item">
-            <div>
-                <h4>{props.title}</h4>
-                <img src={props.pictureUrl} alt=""/>
-                <p>{props.description}</p>
-                <div>Precio {props.price} UYU</div>
-            </div>
-        </div>
+        <article className="Item" key={title}>
+                <h4>{title}</h4>
+                <img src={pictureUrl} alt={pictureUrlAlt}/>
+                <Link to={{pathname:`/ItemDetail/${id}`}}><button>Comprar</button></Link>
+        </article>
     );
 }

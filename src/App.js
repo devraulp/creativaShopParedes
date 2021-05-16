@@ -1,24 +1,30 @@
-import React from "react";
+// import { CartContext } from "./components/Context/cartContext";
+// import { CartProvider } from "./components/Context/cartContext";
+// import { useContext} from "react"
 import './App.css';
-import {NavBar} from "./components/NavBar/NavBar";
-import {ItemListContainer} from "./components/ItemListContainer/ItemListContainer";
-import {ItemDetailContainer} from "./components/ItemDetailContainer/ItemDetailContainer";
-import {Cart} from './components/Cart/Cart';
-import {BrowserRouter, Switch, Route} from "react-router-dom"
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import  {Cart}  from './components/Cart/Cart';
+import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { NavBar } from "./components/NavBar/NavBar";
+import React from "react";
 
 
 function App() {
-  return (  
+
+  // const quantity = useContext(CartContext)cartQuantity={quantity}
+
+  return (
+    // <CartProvider>
     <BrowserRouter>
-      <NavBar/> 
-      <ItemDetailContainer/>     
+      <NavBar />
       <Switch>
-        {/* <Route component={Inicio}/> */}
-        <Route component={ItemListContainer}/>
-        <Route component={Cart}/>
-        {/* <Route component={Contacto}/> */}
+        <Route path="/Productos" component={ItemListContainer} />
+        <Route path="/ItemDetail/:id" component={ItemDetailContainer} />
+        <Route exact path="/Cart" component={Cart} />
       </Switch>
     </BrowserRouter>
+    // </CartProvider>
   )
 }
 

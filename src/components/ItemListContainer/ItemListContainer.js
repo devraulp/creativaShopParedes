@@ -1,13 +1,11 @@
 import './ItemListContainer.css';
-import {Products} from "../ItemList/ItemList"
+import {ItemList} from "../ItemList/ItemList"
 
-export const ItemListContainer = (props) => {
+export const ItemListContainer = () => {
+    
     return (
-        <div>
-            <p className="Items" >{props.greeting}</p>
-            <div>
-                <Products/>
-            </div>
+        <div className="Items">
+            <ItemList/>
         </div>
     );    
 };

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     display: flex;    
-    border: 1px black solid;
+    
     button {
         background-color: #FFE411;
         font-size: 25px;
@@ -13,10 +13,14 @@
         width: 15%;
     }
     input {
-        width: 70%;
-        height: 30px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        width: 100px;
+        height: 40px;
         text-align: center;
-    
+        border: 1px black solid;
+        background-color: blanchedalmond;
     } 
     
 }

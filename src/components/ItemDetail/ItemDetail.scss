@@ -1,7 +1,19 @@
 .Item {
-    display: block;
+    display: inline-block;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.288);
+    p {
+        color: white;
+        margin: 5px 20px;
+        background-color: rgba(0, 0, 0, 0.288);
+        padding: 5px;
+    }
+    h4 {
+        background-color: wheat;
+        border: 1px black solid;
+        margin: 10px 20px;
+        padding: 10px;
+    }
 }
 
 button {

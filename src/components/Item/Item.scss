@@ -1,32 +1,30 @@
+
+
 .Item {
-    display: block;
+    display: inline-block;    
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.288);
-}
-
-button {
-    font-size: inherit;
-    background-color: #FFE411;
-    width: 120px;
-    text-align: center;
-    margin: 10px 20px;
-    padding: 5px;
-}
-
-.descripProduct {
-    display: inline;    
-    text-align: center;
-    margin: 10px;
-    width: 500px;
-    padding: 0;
+    margin: 20px;
+    border: 1px black solid;
+    width: 300px;
+    height: fit-content;
     h4 {
-        font-size: 24px;
-        margin: 5px;
+        margin: 10px 0;
     }
     img {
         border: 1px black solid;
-        margin: 10px;
         width: 200px;
         height: 200px;
     }
+    button {
+        font-size: 24px;
+        background-color: #FFE411;
+        width: fit-content;
+        text-align: center;
+        margin: 10px 20px;
+        padding: 5px 20px;
+    }
 }
+
+
+
+
