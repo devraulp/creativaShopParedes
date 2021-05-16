@@ -3,13 +3,15 @@ import { getFirestore } from "../../firebase";
 import "./ItemDetail.css";
 import { useParams } from "react-router";
 import { ItemCount } from "../ItemCount/ItemCount";
-// import { useContext } from "react";
-// import { CartContext } from "../Context/cartContext";
+import { useContext } from "react";
+import { CartContext } from "../Context/cartContext";
 
 export function ItemDetail() {
     const [items, setItems] = useState([])
     const { id } = useParams()
-    // const {addToCart} = useContext(CartContext)
+    const {addToCart} = useContext(CartContext)
+
+    
 
     useEffect(() => {
         const getProducts = async () => {
@@ -22,9 +24,9 @@ export function ItemDetail() {
         getProducts()
     }, [id])
 
-    const [quantity, setQuantity] = useState();
+    const [count, setCount] = useState();
     function onAdd(e) {
-        setQuantity(e.count)
+        setCount(e.count)
     }
 
     return (
@@ -34,7 +36,7 @@ export function ItemDetail() {
             <p>{items.description}</p>
             <h4>{items.price} UYU</h4>
             <ItemCount initial={1} stock={5} onAdd={onAdd} />
-            <button>Añadir al Carrito ({quantity})</button>
+            <button onClick={() => addToCart(items)}>Añadir al Carrito ({count})</button>
         </div>
     )
 }

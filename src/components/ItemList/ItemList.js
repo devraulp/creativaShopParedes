@@ -37,6 +37,7 @@ export const ItemList = () => {
                         title={item.title}
                         pictureUrl={item.pictureUrl}
                         pictureUrlAlt={item.pictureUrlAlt}
+                        
                         />            
                     )
                 )
