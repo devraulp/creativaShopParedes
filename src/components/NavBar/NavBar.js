@@ -6,7 +6,7 @@ import { CartContext } from "../Context/cartContext";
 
 export function NavBar() {
 
-  const {quantity} = useContext(CartContext)
+  const {cartQuantity} = useContext(CartContext)
 
 
   return (
@@ -17,7 +17,7 @@ export function NavBar() {
         <p><Link to="/Productos" > Productos </Link></p>
         <p><Link to="" >Contacto</Link></p>
         <Link to="/Cart" ><CartWidget /></Link>
-        <p className="cantCompra" >{quantity}</p>
+        <p className="cantCompra" >{cartQuantity}</p>
       </nav>
     </header>
   );

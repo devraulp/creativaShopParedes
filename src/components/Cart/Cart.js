@@ -24,7 +24,7 @@ export function Cart() {
 
     return (
         <div>
-            {shop ? (
+            {quantity === 0 ? (
                 <h1>El Carrito esta Vacio...</h1>
             ) : (
                 shop.map((item) => (

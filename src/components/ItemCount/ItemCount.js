@@ -1,10 +1,14 @@
 import { useState } from "react"
 import "./ItemCount.css"
+import { useContext } from "react";
+import { CartContext } from "../Context/cartContext";
 
 
-export const ItemCount = ({stock, initial, onAdd}) => {        
+export const ItemCount = ({stock, initial, i}) => {        
 
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(0);
+    const {addToCart} = useContext(CartContext)
+    const {shopToCart} = useContext(CartContext)
 
     function restar () {
         if(count > initial){
@@ -20,11 +24,19 @@ export const ItemCount = ({stock, initial, onAdd}) => {
         }
     }
 
+    function añadirAlCarrito() {
+        shopToCart(count)
+        addToCart(i)
+    }
+    
+
+
     return ( 
         <div className="itemCount" >
             <button onClick={restar}> - </button>
-            <input value={count} type="number" onChange={onAdd({count})} disabled/>
+            <input value={count} type="number" disabled/>
             <button onClick={sumar}> + </button>
+            <button onClick={añadirAlCarrito}>Añadir al Carrito</button>
         </div>
 
     )
