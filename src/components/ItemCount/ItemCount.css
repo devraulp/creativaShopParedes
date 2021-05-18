@@ -18,6 +18,11 @@
   width: 15%;
 }
 
+.itemCount button a {
+  text-decoration: none;
+  color: black;
+}
+
 .itemCount input {
   color: black;
   font-weight: bold;

@@ -20,11 +20,16 @@
 
 button {
   font-size: inherit;
-  background-color: #FFE411;
+  background-color: #ffe411;
   width: 120px;
   text-align: center;
   margin: 10px 20px;
   padding: 5px;
+}
+
+button a {
+  color: black;
+  text-decoration: none;
 }
 
 .comprar button {

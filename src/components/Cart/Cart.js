@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from "react"
 import { CartContext } from "../Context/cartContext";
+import { Link } from "react-router-dom";
 
 
 
@@ -13,10 +14,12 @@ export function Cart() {
     const [shop, setShop] = useState([])
 
     useEffect(() => {
-        const showProducts = () => {
-            setShop(cart)
-        }
-        showProducts()
+        setTimeout(() => {
+            const showProducts = () => {
+                setShop(cart)
+            }
+            showProducts()
+        }, 1000);
     }, [cart])
 
 
@@ -25,10 +28,13 @@ export function Cart() {
     return (
         <div>
             {quantity === 0 ? (
-                <h1>El Carrito esta Vacio...</h1>
+                <div>
+                    <h1>El Carrito esta Vacio...</h1>
+                    <button><Link to="/Productos">Regresar</Link></button>
+                </div>
             ) : (
                 shop.map((item) => (
-                    <div className="Item">
+                    <div className="Item" key={item.key}>
                         <h2>{item.title}</h2>
                         <img src={item.pictureUrl} alt={item.pictureUrlAlt} />
                         <p>{cart.length} UNID</p>
