@@ -13,7 +13,7 @@ export const CartProvider = ({ children }) => {
         const itemBuy = ([...cart])
         const findItem = isInCart(item);
         if (findItem) {
-            itemBuy[itemBuy.findIndex(prod => prod.id === item.id)].quantity += quantity; //o .quantity++
+            itemBuy[itemBuy.findIndex(prod => prod.id === item.id)].quantity += quantity;
             setCart(itemBuy);
             return;
         }
