@@ -51,7 +51,6 @@ export function Cart() {
         })
         
     }
-    console.log(orderId);
 
     return (
         <div>
