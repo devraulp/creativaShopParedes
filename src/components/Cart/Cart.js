@@ -51,20 +51,19 @@ export function Cart() {
         })
         
     }
-    
     console.log(orderId);
 
     return (
         <div>
             {cartQuantity === 0 ? (
-                <div>
+                <div key="cartEmpty">
                     <h1>El Carrito esta Vacio...</h1>
                     <Link to="/Productos"><button>Regresar</button></Link>
                 </div>
             ) : (
                 <div>
                     {shop.map((item) => (
-                        <div>
+                        <div key="">
                             <div className="Item" key={item.id}>
                                 <h2>{item.title}</h2>
                                 <img src={item.pictureUrl} alt={item.pictureUrlAlt} />

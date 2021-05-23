@@ -12,6 +12,7 @@ export function ItemDetail() {
     
 
     useEffect(() => {
+        setTimeout(() => { 
         const getProducts = async () => {
             const db = getFirestore()
             const ItemCollection = db.collection("Bebes")
@@ -20,9 +21,9 @@ export function ItemDetail() {
             setItems(product[id]);
         }
         getProducts()
+        },2000);  
     }, [id])
 
-    
 
     return (
         <div className="Item">
@@ -30,7 +31,7 @@ export function ItemDetail() {
             <img src={items.pictureUrl} alt={items.pictureUrlAlt} />
             <p>{items.description}</p>
             <h4>{items.price} UYU</h4>
-            <ItemCount initial={1} stock={5} i={items}/>
+            <ItemCount stock={items.stock} initial={0}  i={items}/>
         </div>
     )
 }
