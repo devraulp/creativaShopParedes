@@ -23,14 +23,20 @@ export const CartProvider = ({ children }) => {
 
     const isInCart = item => cart.find(product => product.id === item.id)
 
+    const totalPrice = () => {
+        let totalPrice = cart.reduce((acc, cv) => (acc += cv.price * cv.quantity), 0)
+        return totalPrice
+    } 
+
 
     const removeFromCart = (itemId, itemQuantity) => {
         const newQuantity = cartQuantity - itemQuantity
         setCartQuantity(newQuantity)
         const newCart = cart.filter(item => item.id !== itemId)
         setCart(newCart)
-        console.log(newQuantity);
     }
+
+    const emptyCart = () => {setCart([])}
 
     useEffect(() => {
         setQuantity(cart.length)
@@ -41,38 +47,11 @@ export const CartProvider = ({ children }) => {
         setCartQuantity(shopQuantity)
         let shopAdd = cartQuantity + shopQuantity
         setCartQuantity(shopAdd)
-    }
+    }    
 
     return (
-        <CartContext.Provider value={{ quantity, cart, addToCart, removeFromCart, cartQuantity, shopToCart }}>
+        <CartContext.Provider value={{ quantity, cart, addToCart, removeFromCart, cartQuantity, shopToCart, totalPrice, emptyCart}}>
             {children}
         </CartContext.Provider>
     )
 }
-
-
-// export default function Cart() {
-//     const [cart, setCart] = useState([]);
-//     const addToCart = (item, quantity) => {
-//         const newCart = [...cart]
-//         //Verificar si existe en el carrito
-//         const findItem = isInCart(item);
-//         //Si existe en el carrito
-//         if(findItem) {
-//             newCart[newCart.findIndex(prod => prod.id === item.id)].quantity += quantity; //o .quantity++
-//             setCart(newCart);
-//             return;
-//         }
-//         //Si no esta en el carrito
-//         item.quantity = quantity;
-//         newCart.push(item);
-//         setCart(newCart);
-//     }
-//     const isInCart = item => cart.find(product => product.id === item.id)
-    // useEffect(()=> {
-    //   console.log(cart)
-    // }, [cart])
-    // return (
-    //     <div>Render del carrito</div>
-    // )
-// }

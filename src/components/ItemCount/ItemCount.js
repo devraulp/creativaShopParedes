@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react"
 import "./ItemCount.css"
-import { useContext } from "react";
 import { CartContext } from "../Context/cartContext";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { useState, useEffect } from "react"
 
 export const ItemCount = ({ stock, initial, i }) => {
 
@@ -56,8 +56,8 @@ export const ItemCount = ({ stock, initial, i }) => {
                     {stockItem < stock ? (
                         <div>
                             <button onClick={añadirAlCarrito}>Añadir al Carrito</button>
-                            <Link to="/Cart"><button>Finalizar Compra</button> </Link>
-                            <Link to="/Productos"><button> Seguir Comprando </button> </Link>
+                            <Link to="/Cart"><button>Ir al Carrito</button> </Link>
+                            <Link to="/"><button> Seguir Comprando </button> </Link>
                         </div>
                     ) : (
                         <button onClick={añadirAlCarrito}>Añadir al Carrito</button>

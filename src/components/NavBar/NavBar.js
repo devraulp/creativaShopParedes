@@ -14,7 +14,7 @@ export function NavBar() {
       <p className="navbar titulo">CREATIVA</p>
       <nav className="navbar">
         <p><Link to="" >Inicio</Link></p>
-        <p><Link to="/Productos" > Productos </Link></p>
+        <p><Link to="/" > Productos </Link></p>
         <p><Link to="" >Contacto</Link></p>
         <Link to="/Cart" ><CartWidget /></Link>
         <p className="cantCompra" >{cartQuantity}</p>
