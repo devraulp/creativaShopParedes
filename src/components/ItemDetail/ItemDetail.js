@@ -22,15 +22,26 @@ export function ItemDetail() {
     }, [id, items])
 
     return (
-        <div >
+        <div>
             {items ? (
-                <div className="ItemDetail">
-                    <h2>{items.title}</h2>
-                    <img src={items.pictureUrl} alt={items.pictureUrlAlt} />
-                    <p>{items.description}</p>
-                    <h4>{items.price} UYU</h4>
-                    <ItemCount stock={items.stock} initial={0}  i={items}/>
-                </div>
+                <div className="items">
+                    <div>
+                    <h1>{items.category}</h1>
+                    </div>
+                    <div className="ItemDetail container row">
+                        <div className="col">
+                            <img src={items.pictureUrl} alt={items.pictureUrlAlt} />
+                        </div>
+                        <div className="col">
+                            <h2>{items.title}</h2>
+                            <p>{items.description}</p>
+                        </div>
+                        <div className="col">
+                        <h4>{items.price} UYU</h4>
+                        <ItemCount stock={items.stock} initial={0}  i={items}/>
+                        </div>
+                    </div>
+                </div>    
             ) : (
                 <h3>No hay Stock</h3>
             )}

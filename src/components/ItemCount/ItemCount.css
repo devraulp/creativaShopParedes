@@ -15,12 +15,9 @@
   background-color: #FFE411;
   font-size: 25px;
   height: 45px;
-  width: 15%;
-}
-
-.itemCount button a {
-  text-decoration: none;
-  color: black;
+  margin: 10px;
+  border-radius: 30px;
+  width: 250px;
 }
 
 .itemCount input {
@@ -28,9 +25,15 @@
   font-weight: bold;
   font-size: 18px;
   width: 100px;
-  height: 40px;
+  height: 45px;
   text-align: center;
   border: 1px black solid;
   background-color: blanchedalmond;
+  padding-top: 7px;
+  border-radius: 30px;
+}
+
+.itemCount .buttonCount {
+  width: 50px;
 }
 /*# sourceMappingURL=ItemCount.css.map */

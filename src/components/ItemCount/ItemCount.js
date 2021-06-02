@@ -49,9 +49,9 @@ export const ItemCount = ({ stock, initial, i }) => {
             {stockItem >= 0 ? (
 
                 <div className="itemCount" >
-                    <button onClick={restar}> - </button>
+                    <button className="buttonCount" onClick={restar}> - </button>
                     <input value={count} type="number" disabled />
-                    <button onClick={sumar}> + </button>
+                    <button className="buttonCount" onClick={sumar}> + </button>
                     <p>Stock Disponoble : {stockItem}</p>
                     {stockItem < stock ? (
                         <div>

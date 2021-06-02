@@ -1,4 +1,3 @@
-import "./ItemDetailContainer.css";
 import {ItemDetail} from "../ItemDetail/ItemDetail"
 
 

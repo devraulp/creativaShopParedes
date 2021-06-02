@@ -1,40 +1,63 @@
+.items {  
+  text-align: -webkit-center;
+  margin: 30px 0px;
+}
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0 115px;
+  background-color: rgba(0, 0, 0, 0.288);   
+  background-image: linear-gradient( rgba(0, 255, 85, 0.61),rgba(0, 190, 180, 0.61));
+  padding: 10px 0px;
+  border-bottom: groove;
+  border-right: groove;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-radius: 30px;
+}
 .ItemDetail {
-  display: inline-block;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.288);   
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.288);
+  background-image: linear-gradient( rgba(0, 255, 85, 0.61),rgba(0, 190, 180, 0.61));
+  border-bottom: groove;
+  border-right: groove;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-radius: 30px;
   p {
     color: white;
-    margin: 5px 20px;
     background-color: rgba(0, 0, 0, 0.288);
     padding: 5px;
+    border-radius: 15px;
+    margin-top: 25px;
+  }
+  h2 {
+    background-color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 30px;
   }
   h4 {
-    background-color: wheat;
-    border: 1px black solid;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
     margin: 10px 20px;
     padding: 10px;
+    font-size: 25px;
+    border-radius: 30px;
   }
-}
-
-button {
-  a {
-    color: black;
-    text-decoration: none;
+  img {
+    border: 1px gray solid;
+    border-radius: 30px;
+    border-style: groove;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    width: 300px;
+    height: auto;
+    margin: 20px;
   }
-
-  font-size: inherit;
-  background-color: #ffe411;
-  width: 120px;
-  text-align: center;
-  margin: 10px 20px;
-  padding: 5px;
-}
-
-.comprar {
-  button {
-    margin-top: 5px;
-    width: 310px;
-    text-align: center;
-    border: 1px black solid;
+  .col {
+    align-self: center;
   }
 }
