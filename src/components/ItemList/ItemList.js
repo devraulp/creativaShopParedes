@@ -1,4 +1,3 @@
-import "./ItemList.css"
 import { getFirestore } from "../../firebase";
 import { Item } from "../Item/Item";
 import { useEffect, useState } from "react";

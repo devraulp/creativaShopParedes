@@ -24,7 +24,7 @@ export function ItemDetail() {
     return (
         <div >
             {items ? (
-                <div className="Item">
+                <div className="ItemDetail">
                     <h2>{items.title}</h2>
                     <img src={items.pictureUrl} alt={items.pictureUrlAlt} />
                     <p>{items.description}</p>

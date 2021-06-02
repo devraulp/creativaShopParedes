@@ -3,4 +3,27 @@
   text-align: center;
   margin: 15px;
 }
+
+.btn:not(:disabled):not(.disabled) {
+  font-size: 20px;
+  width: 200px;
+  cursor: pointer;
+  border-bottom: groove;
+  border-right: groove;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-radius: 30px;
+}
+
+.dropdown-menu.show {
+  width: 200px;
+  text-align: center;
+  background-color: greenyellow;
+  color: blue;
+  font-size: 20px;
+}
+
+.dropdown-menu.show :hover {
+  text-decoration: none;
+}
 /*# sourceMappingURL=ItemListContainer.css.map */

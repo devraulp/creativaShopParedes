@@ -1,7 +1,6 @@
 .titulo {
   float: left;
   margin: 0;
-  padding-left: 2rem;
   color: #ffe411;
   font-weight: bold;
   text-shadow: 1px 2px 2px black;
@@ -9,18 +8,12 @@
 }
 
 .navbar {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#00996f), to(#00c892));
-  background-image: linear-gradient(#00996f, #00c892);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00996f), to(#00c892));
+  background-image: linear-gradient(#00996f, #00c892);
+  height: 50px;
 }
 
 .navbar a {
@@ -28,7 +21,6 @@
 }
 
 .navbar p {
-  text-decoration: none;
   color: white;
   font-weight: bold;
   text-shadow: 1px 2px 2px black;
@@ -38,14 +30,13 @@
 
 .navbar :hover {
   color: #ffe411;
+  text-decoration: none;
 }
 
 .cantCompra {
-  background-color: rgba(0, 0, 0, 0.24);
   position: absolute;
-  right: 4px;
-  top: 16px;
-  padding: 3px;
+  right: 10px;
+  bottom: 18px;
   border-radius: 10rem;
 }
 /*# sourceMappingURL=NavBar.css.map */

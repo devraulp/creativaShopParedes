@@ -1,23 +1,40 @@
-
-
-.Item {
-    display: inline-block;    
-    text-align: center;
+.Item { 
+    background-image: linear-gradient( rgba(0, 255, 85, 0.61),rgba(0, 190, 180, 0.61));
+    display: inline-block;
     margin: 20px;
-    border: 1px black solid;
     width: 300px;
-    height: fit-content;
+    border-bottom: groove;
+    border-right: groove;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-radius: 30px;
     h4 {
-        margin: 10px 0;
+        border-radius: 50px;
+        background-color: white;
+        margin-top: 20px;
+        margin: 25px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    h5 {
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px black;
+        margin-bottom: 20px;
     }
     img {
-        border: 1px black solid;
+        border: 1px gray solid;
+        border-radius: 30px;
+        border-style: groove;
+        border-right-width: 5px;
+        border-bottom-width: 5px;
         width: 200px;
         height: 200px;
     }
     button {
         font-size: 24px;
         background-color: #FFE411;
+        border-radius: 50px;
         width: fit-content;
         text-align: center;
         margin: 10px 20px;
