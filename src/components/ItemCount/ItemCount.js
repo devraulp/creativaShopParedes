@@ -3,6 +3,8 @@ import { CartContext } from "../Context/cartContext";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { useState, useEffect } from "react"
+import Modal from 'react-bootstrap/Modal'
+
 
 export const ItemCount = ({ stock, initial, i }) => {
 
@@ -10,6 +12,8 @@ export const ItemCount = ({ stock, initial, i }) => {
     const { addToCart } = useContext(CartContext)
     const { shopToCart } = useContext(CartContext)
     const [stockItem, setStockItem] = useState(false)
+    const [smShow, setSmShow] = useState(false);
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -30,9 +34,7 @@ export const ItemCount = ({ stock, initial, i }) => {
         if (count < stockItem) {
             setCount(count + 1);
         } else if (count === stockItem) {
-            alert("No hay mas Stock");
-        } else {
-            alert("No hay mas Stock")
+            setSmShow(true)
         }
     }
 
@@ -68,6 +70,22 @@ export const ItemCount = ({ stock, initial, i }) => {
                 <div>
                     <h4>Consultando Stock... </h4>
                 </div>
+            )}
+            {count === stockItem ? (
+                <Modal
+                size="sm"
+                show={smShow}
+                onHide={() => setSmShow(false)}
+                aria-labelledby="example-modal-sizes-title-sm">
+                <Modal.Header closeButton>
+                    <Modal.Title id="example-modal-sizes-title-sm">
+                        Lo sentimos mucho!
+                </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>No hay mas Stock</Modal.Body>
+                </Modal>
+            ) : (
+                <div></div>
             )}
         </div>
     )
