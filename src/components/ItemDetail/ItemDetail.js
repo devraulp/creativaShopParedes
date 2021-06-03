@@ -37,8 +37,8 @@ export function ItemDetail() {
                             <p>{items.description}</p>
                         </div>
                         <div className="col">
-                        <h4>{items.price} UYU</h4>
-                        <ItemCount stock={items.stock} initial={0}  i={items}/>
+                            <h4>Precio: {items.price} UYU</h4>
+                            <ItemCount stock={items.stock} initial={0}  i={items}/>
                         </div>
                     </div>
                 </div>    

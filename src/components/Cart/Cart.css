@@ -1,20 +1,116 @@
-.Item {
-  display: inline-block;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.288);
+.cartEmpty {
+  text-align-last: center;
 }
 
-.Item p {
+.cartEmpty h2 {
   color: white;
-  margin: 5px 20px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.cartEmpty button {
+  text-align-last: center;
+  background-color: #FFE411;
+  font-size: 25px;
+  height: 45px;
+  margin: 10px;
+  border-radius: 30px;
+  width: 250px;
+}
+
+.cart {
+  text-align: -webkit-center;
+  margin: 30px 0px;
+}
+
+.ItemCart {
+  background-color: rgba(0, 0, 0, 0.288);
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 85, 0.61)), to(rgba(0, 190, 180, 0.61)));
+  background-image: linear-gradient(rgba(0, 255, 85, 0.61), rgba(0, 190, 180, 0.61));
+  border-bottom: groove;
+  border-right: groove;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-radius: 30px;
+  margin: 30px 0px;
+}
+
+.ItemCart p {
+  color: white;
   background-color: rgba(0, 0, 0, 0.288);
   padding: 5px;
+  border-radius: 15px;
 }
 
-.Item h4 {
-  background-color: wheat;
-  border: 1px black solid;
-  margin: 10px 20px;
+.ItemCart h2 {
+  background-color: white;
+  margin: 10px 0px;
   padding: 10px;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.ItemCart h4 {
+  background-color: rgba(0, 0, 0, 0.288);
+  color: white;
+  margin: 10px 0px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.ItemCart img {
+  border: 1px gray solid;
+  border-radius: 30px;
+  border-style: groove;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  width: 200px;
+  height: auto;
+  margin: 20px;
+}
+
+.ItemCart button {
+  background-color: #FFE411;
+  font-size: 25px;
+  height: 45px;
+  margin: 10px;
+  border-radius: 30px;
+  width: 250px;
+}
+
+.ItemCart .col {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cartTotal {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 85, 0.61)), to(rgba(0, 190, 180, 0.61)));
+  background-image: linear-gradient(rgba(0, 255, 85, 0.61), rgba(0, 190, 180, 0.61));
+  border-radius: 30px;
+  border-bottom: groove;
+  border-right: groove;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  margin: 0px 80px;
+  padding: 20px;
+}
+
+.cartTotal h3 {
+  margin-bottom: 20px;
+}
+
+.cartTotal button {
+  background-color: #FFE411;
+  font-size: 25px;
+  height: 45px;
+  margin: 10px;
+  border-radius: 30px;
+  width: 250px;
 }
 /*# sourceMappingURL=Cart.css.map */

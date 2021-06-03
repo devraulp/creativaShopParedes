@@ -1,6 +1,8 @@
 import { getFirestore } from "../../firebase";
 import { Item } from "../Item/Item";
 import { useEffect, useState } from "react";
+import "./ItemList.css";
+
 
 export const ItemList = () => {
     const [items, setItems] = useState([])
@@ -41,7 +43,7 @@ export const ItemList = () => {
                     ))
                 )
             ) : (
-                <div>
+                <div className="itemList">
                     <h4>Buscando Productos... </h4>
                 </div>                
             )} 

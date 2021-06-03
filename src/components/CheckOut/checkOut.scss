@@ -1,0 +1,55 @@
+.checkOut {    
+    display: flex;
+    justify-content: center;
+    hr {
+        border-top: 1px black solid;
+    }
+}
+
+.checkOutOrder {
+    justify-content: center;    
+    text-align-last: center;
+    background-image: linear-gradient( rgba(0, 255, 85, 0.61),rgba(0, 190, 180, 0.61));
+    margin: 40px;
+    border-bottom: groove;
+    border-right: groove;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-radius: 30px;
+    padding: 30px;
+    color: white;
+    button {
+        background-color: #FFE411;
+        font-size: 25px;
+        height: 45px;
+        margin: 10px;
+        border-radius: 30px;
+        width: 250px;
+    } 
+    p {
+        font-size: 20px;
+    }
+}
+
+.checkOutForm {
+    justify-content: center;    
+    text-align-last: center;
+
+    .input-group-text {
+        place-content: center;
+        font-weight: bold;
+    }
+    h3 {
+        color: white;
+        margin: 20px;
+    }
+
+    button {
+        background-color: #FFE411;
+        font-size: 25px;
+        height: 45px;
+        margin: 10px;
+        border-radius: 30px;
+        width: 250px;
+    }
+}

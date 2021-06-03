@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { CartContext } from "../Context/cartContext";
 import { getFirestore } from "../../firebase";
 import { Link } from "react-router-dom";
-
+import "./checkOut.css";
 
 export function CheckOut() {   
     
@@ -44,30 +44,34 @@ export function CheckOut() {
     }
 
     return (
-        <div>
+        <div className="checkOut">
             {orderId ? (
-            <div>
+            <div className="checkOutOrder">
                 <p>Detalle de tu Compra:</p>
+                <hr/>
                 <div>
-                {buy.map((item) => (
-                    <div className="Item" key={item.id}>
-                        <h4>{item.category}</h4>
-                        <h4>{item.title}</h4>
-                        <p>{item.quantity} UNID</p>
-                        <p>{`${item.price}` * `${item.quantity}`} UYU</p>
-                    </div>
-                ))}
-                <h3>Total Compra: {totalPriceBuy()} UYU</h3>   
+                    {buy.map((item) => (
+                        <div key={item.id}>
+                            <h2>{item.category}</h2>
+                            <h2>{item.title}</h2>
+                            <p>Cantidad: {item.quantity} UNID</p>
+                            <p>Precio: {`${item.price}` * `${item.quantity}`} UYU</p>
+                            <hr/>
+                        </div>
+                    ))}
+                    <h3>Total Compra: {totalPriceBuy()} UYU</h3>   
                 </div>
-                <p>Tu Numero de Orden es {orderId}</p>
+                <hr/>
+                <p>Tu Numero de Orden es: <br/> {orderId}</p>
+                <hr/>
                 <p>Gracias por tu Compra...</p>
                 <Link to="/"><button>Regresar</button></Link>
             </div>
-            ): (
-            <div>
+            ) : (
+            <div className="checkOutForm">
                 <h3>Total Compra: {totalPrice()} UYU</h3>
-                <div className="input-group-sm mb-3" key="nombre">
                 <div>
+                <div className="input-group-sm mb-3" key="nombre">
                     <span className="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
                     <input type="name" onChange={(e)=>setNombre(e.target.value)} className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"/>
                 </div>

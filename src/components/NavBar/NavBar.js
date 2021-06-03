@@ -11,8 +11,8 @@ export function NavBar() {
 
   return (
     <header>
-      <p className="navbar titulo">CREATIVA</p>
-      <nav className="navbar">
+      <p className="navBar titulo">CREATIVA</p>
+      <nav className="navBar">
         <p><Link to="" >Inicio</Link></p>
         <p><Link to="/" > Productos </Link></p>
         <p><Link to="" >Contacto</Link></p>

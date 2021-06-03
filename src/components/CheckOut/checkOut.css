@@ -1,0 +1,69 @@
+.checkOut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkOut hr {
+  border-top: 1px black solid;
+}
+
+.checkOutOrder {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align-last: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 85, 0.61)), to(rgba(0, 190, 180, 0.61)));
+  background-image: linear-gradient(rgba(0, 255, 85, 0.61), rgba(0, 190, 180, 0.61));
+  margin: 40px;
+  border-bottom: groove;
+  border-right: groove;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
+  border-radius: 30px;
+  padding: 30px;
+  color: white;
+}
+
+.checkOutOrder button {
+  background-color: #FFE411;
+  font-size: 25px;
+  height: 45px;
+  margin: 10px;
+  border-radius: 30px;
+  width: 250px;
+}
+
+.checkOutOrder p {
+  font-size: 20px;
+}
+
+.checkOutForm {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align-last: center;
+}
+
+.checkOutForm .input-group-text {
+  place-content: center;
+  font-weight: bold;
+}
+
+.checkOutForm h3 {
+  color: white;
+  margin: 20px;
+}
+
+.checkOutForm button {
+  background-color: #FFE411;
+  font-size: 25px;
+  height: 45px;
+  margin: 10px;
+  border-radius: 30px;
+  width: 250px;
+}
+/*# sourceMappingURL=checkOut.css.map */

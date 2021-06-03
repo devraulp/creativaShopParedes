@@ -4,6 +4,6 @@ import { ReactComponent as Cart } from "../../img/cart.svg";
 
 export const CartWidget = () => {
     return (
-    <Cart className="cart" />
+    <Cart className="cartWidget" />
     );
 };
