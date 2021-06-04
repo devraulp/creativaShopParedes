@@ -15,6 +15,10 @@
   border-radius: 30px;
 }
 
+.dropdown {
+  margin-top: 60px;
+}
+
 .dropdown-menu.show {
   width: 200px;
   text-align: center;

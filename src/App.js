@@ -7,6 +7,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { ItemCategoryContainer } from "./components/ItemCategoryContainer/ItemCategoryContainer";
 import { NavBar } from "./components/NavBar/NavBar";
+import { InicioContainer } from "./components/InicioContainer/InicioContainer"
 import { CheckOut } from "./components/CheckOut/CheckOut";
 import { useContext } from "react"
 import React from "react";
@@ -21,7 +22,8 @@ function App() {
       <BrowserRouter>
         <NavBar cartQuantity = { quantity }/>
         <Switch>
-          <Route exact path="/" component={ItemListContainer} />
+          <Route exact path="/" component={InicioContainer} />
+          <Route path="/Productos" component={ItemListContainer} />
           <Route path="/categories/:categoryName" component={ItemCategoryContainer} />
           <Route path="/ItemDetail/:id" component={ItemDetailContainer} />
           <Route path="/Cart" component={Cart} />
