@@ -7,6 +7,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { ItemCategoryContainer } from "./components/ItemCategoryContainer/ItemCategoryContainer";
 import { NavBar } from "./components/NavBar/NavBar";
+import { Footer } from "./components/Footer/Footer";
 import { InicioContainer } from "./components/InicioContainer/InicioContainer"
 import { CheckOut } from "./components/CheckOut/CheckOut";
 import { useContext } from "react"
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Cart" component={Cart} />
           <Route path="/CheckOut" component={CheckOut} />
         </Switch>
+        <Footer/>
       </BrowserRouter>
     </CartProvider>
   )
