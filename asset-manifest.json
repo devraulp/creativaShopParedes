@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/creativaShopParedes/static/css/main.ad3a61d7.chunk.css",
+    "main.js": "/creativaShopParedes/static/js/main.8805297b.chunk.js",
+    "main.js.map": "/creativaShopParedes/static/js/main.8805297b.chunk.js.map",
+    "runtime-main.js": "/creativaShopParedes/static/js/runtime-main.de5b4b69.js",
+    "runtime-main.js.map": "/creativaShopParedes/static/js/runtime-main.de5b4b69.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/creativaShopParedes/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.c2b51b96.chunk.js": "/creativaShopParedes/static/js/2.c2b51b96.chunk.js",
+    "static/js/2.c2b51b96.chunk.js.map": "/creativaShopParedes/static/js/2.c2b51b96.chunk.js.map",
+    "index.html": "/creativaShopParedes/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/creativaShopParedes/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.ad3a61d7.chunk.css.map": "/creativaShopParedes/static/css/main.ad3a61d7.chunk.css.map",
+    "static/js/2.c2b51b96.chunk.js.LICENSE.txt": "/creativaShopParedes/static/js/2.c2b51b96.chunk.js.LICENSE.txt",
+    "static/media/Inicio.css": "/creativaShopParedes/static/media/background.51ec4ada.jpg",
+    "static/media/cart.b65b5474.svg": "/creativaShopParedes/static/media/cart.b65b5474.svg",
+    "static/media/instagramicon.40527f62.png": "/creativaShopParedes/static/media/instagramicon.40527f62.png",
+    "static/media/logo.fd49e65b.png": "/creativaShopParedes/static/media/logo.fd49e65b.png",
+    "static/media/whatsappicon.1ddc0414.png": "/creativaShopParedes/static/media/whatsappicon.1ddc0414.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de5b4b69.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.c2b51b96.chunk.js",
+    "static/css/main.ad3a61d7.chunk.css",
+    "static/js/main.8805297b.chunk.js"
+  ]
+}
