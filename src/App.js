@@ -24,7 +24,7 @@ function App() {
       <BrowserRouter>
         <NavBar cartQuantity = { quantity }/>
         <Switch>
-          <Route exact path="/creativaShopParedes" component={InicioContainer} />
+          <Route exact path="/" component={InicioContainer} />
           <Route path="/Productos" component={ItemListContainer} />
           <Route path="/categories/:categoryName" component={ItemCategoryContainer} />
           <Route path="/ItemDetail/:id" component={ItemDetailContainer} />
